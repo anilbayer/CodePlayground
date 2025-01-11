@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New News Times</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 30px;
+        }
+        .brand {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: 60px;
+            text-align: center;
+        }
+        .header {
+            grid-area: header;
+        }
+        .nav-links {
+            grid-area: nav;
+        }
+        .story-1 {
+            grid-area: story-1;
+        }
+        .story-2 {
+            grid-area: story-2;
+        }
+        .story-3 {
+            grid-area: story-3;
+        }
+        .story-4 {
+            grid-area: story-4;
+        }
+        .story-5 {
+            grid-area: story-5;
+        }
+        .page {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav nav nav"
+                "story-1 story-2 story-3"
+                "story-4 story-5 story-5";
+        }
+        .story {
+            padding: 10px;
+            border-left: 3px solid black;
+            border-bottom: 3px solid black;
+            }
+
+        .story-3, .story-5 {
+            border-right: 3px solid black;
+            }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            border: 3px solid black;
+            margin: 0;
+            padding: 30px;
+            }
+        .section-link:hover {
+                text-decoration: underline;
+            }
+        article {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        .article-title {
+            font-size: 30px;
+            text-align: center;
+            font-weight: normal;
+            font-style: italic;
+            }
+
+        .article-img {
+            display: block;
+            margin: 0 auto;
+            max-height: 250px;
+            }
+
+    </style>
+    <div class="page">
+        <header class="header"><h1 class="brand">The News Times</h1></header>
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#" class="section-link">Politics</a></li>
+            <li class="nav-items"><a href="#" class="section-link">Technology</a></li>
+            <li class="nav-items"><a href="#" class="section-link">Local</a></li>
+            <li class="nav-items"><a href="#" class="section-link">Opinion</a></li>
+            <li class="nav-items"><a href="#" class="section-link">Sports</a></li>
+        </ul>
+        <story class="story story-1"><h2>Students Learns HTML</h2><h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi optio hic similique quasi, soluta sint id accusantium explicabo a nobis odit! Nostrum beatae necessitatibus ratione dicta consequuntur incidunt, esse maiores!</h4><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat odio, recusandae molestiae possimus tempore hic dolores reprehenderit, quibusdam incidunt nisi itaque nesciunt deserunt vel vero tempora magni distinctio temporibus?</h4></story>
+        <story class="story story-2"><h2>Breaking: Luna is Adorable</h2><img src="http://pets-images.dev-apis.com/pets/dog25.jpg" alt="Cure Doggy"><h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque facilis ab vitae corrupti corporis alias mollitia pariatur nam non error?</h4><h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, delectus! Error modi mollitia accusamus possimus a obcaecati sint accusantium repellendus!</h4></story>
+        <story class="story story-3"><h2>CSS in Apparently a Thing</h2><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe eaque veniam laboriosam fuga, impedit quidem, atque praesentium quibusdam necessitatibus distinctio ipsam minima error architecto, laudantium sequi dolores. Molestias, ullam!</h4><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ratione porro facere ullam rem eligendi voluptas ducimus impedit laborum, harum vero! Voluptate exercitationem id at, aut quas a recusandae excepturi deserunt ab praesentium blanditiis sunt eligendi maxime soluta veniam beatae?</h4></story>
+        <story class="story story-4"><h2>Between the Angle Brackets: The Brian Holt Scandal</h2><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe eaque veniam laboriosam fuga, impedit quidem, atque praesentium quibusdam necessitatibus distinctio ipsam minima error architecto, laudantium sequi dolores. Molestias, ullam!</h4><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ratione porro facere ullam rem eligendi voluptas ducimus impedit laborum, harum vero! Voluptate exercitationem id at, aut quas a recusandae excepturi deserunt ab praesentium blanditiis sunt eligendi maxime soluta veniam beatae?</h4></story>
+        <story class="story story-5 double-story"><h2>Scientist Invents New Miracle Drink: Coffee</h2><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui saepe eaque veniam laboriosam fuga, impedit quidem, atque praesentium quibusdam necessitatibus distinctio ipsam minima error architecto, laudantium sequi dolores. Molestias, ullam!</h4><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, ratione porro facere ullam rem eligendi voluptas ducimus impedit laborum, harum vero! Voluptate exercitationem id at, aut quas a recusandae excepturi deserunt ab praesentium blanditiis sunt eligendi maxime soluta veniam beatae?</h4><h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iure ipsam deserunt eius. Dicta modi esse nihil obcaecati voluptatibus molestias blanditiis, nesciunt cupiditate cumque dolorem fuga minima quam asperiores repellendus qui illum in labore ducimus nemo! Nesciunt incidunt amet rerum!</h4></story>
+    </div>
+    
+
+
+</body>
+</html>
