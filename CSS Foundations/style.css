@@ -1,0 +1,9 @@
+body  {
+    background-color: #FF7B54;
+    color: #FFFFFF;
+}
+
+li a {
+    color: inherit;
+    text-decoration: none;
+}
